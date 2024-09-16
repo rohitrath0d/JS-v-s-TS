@@ -372,5 +372,13 @@ TypeScript: Allows defining types using unions (|) and intersections (&).
 let value: string | number;
 ```
 
+#  16. Non-null Assertion Operator
+JavaScript: Does not have a way to assert a value is non-null.
+TypeScript: The non-null assertion operator (!) tells TypeScript that a variable is not null or undefined.
+```ts
+let element = document.getElementById("myDiv")!;
+```
+
+
 
 
