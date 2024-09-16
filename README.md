@@ -363,3 +363,14 @@ TypeScript: Offers built-in utility types like Partial, Pick, Omit, Readonly, an
 type PartialPerson = Partial<Person>;
 ```
 
+
+#  15. Union and Intersection Types
+JavaScript: No built-in union or intersection types.
+TypeScript: Allows defining types using unions (|) and intersections (&).
+
+```ts
+let value: string | number;
+```
+
+
+
