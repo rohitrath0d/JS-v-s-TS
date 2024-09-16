@@ -354,3 +354,12 @@ function isString(x: any): x is string {
   return typeof x === "string";
 }
 ```
+
+
+#  14. Utility Types
+JavaScript: No native utility types.\
+TypeScript: Offers built-in utility types like Partial, Pick, Omit, Readonly, and more to modify or work with existing types.
+```ts
+type PartialPerson = Partial<Person>;
+```
+
