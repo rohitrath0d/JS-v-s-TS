@@ -226,18 +226,18 @@ class Greeter { ... }
 ```
 
 # detailed explaination of decorators:
-Decorators are a special feature in TypeScript that allow you to modify or enhance classes, methods, properties, or parameters at design time (before execution). Decorators can be used to add metadata, change behavior, or augment the functionality of the code they are applied to.
-They are similar to annotations in other languages like Java or Python, and are mainly used in scenarios such as dependency injection, logging, and validation.
+Decorators are a special feature in TypeScript that allow you to modify or enhance classes, methods, properties, or parameters at design time (before execution).\ Decorators can be used to add metadata, change behavior, or augment the functionality of the code they are applied to.\
+They are similar to annotations in other languages like Java or Python, and are mainly used in scenarios such as dependency injection, logging, and validation.\
 
 # Why Are Decorators Used?
-1. Code Reusability: Decorators allow you to apply common logic (e.g., validation, logging, security checks) across multiple classes, methods, or properties.
-2. Separation of Concerns: By moving cross-cutting concerns like logging or security into decorators, you keep the core business logic clean and focused.
+1. Code Reusability: Decorators allow you to apply common logic (e.g., validation, logging, security checks) across multiple classes, methods, or properties.\
+2. Separation of Concerns: By moving cross-cutting concerns like logging or security into decorators, you keep the core business logic clean and focused.\
 3. Enhanced Readability: They make the code more readable by annotating classes or methods with decorators, indicating their purpose directly in the code.
 
 # Types of Decorators:
-1. Class Decorators: Applied to a class to modify its behavior or metadata.
-2. Method Decorators: Applied to methods to alter their functionality.
-3. Property Decorators: Applied to properties to modify how they behave or store values.
+1. Class Decorators: Applied to a class to modify its behavior or metadata.\
+2. Method Decorators: Applied to methods to alter their functionality.\
+3. Property Decorators: Applied to properties to modify how they behave or store values.\
 4. Parameter Decorators: Applied to method parameters to modify how they are processed.
 
 # How Decorators Are Used?
@@ -365,7 +365,7 @@ type PartialPerson = Partial<Person>;
 
 
 #  15. Union and Intersection Types
-JavaScript: No built-in union or intersection types.
+JavaScript: No built-in union or intersection types.\
 TypeScript: Allows defining types using unions (|) and intersections (&).
 
 ```ts
@@ -373,7 +373,7 @@ let value: string | number;
 ```
 
 #  16. Non-null Assertion Operator
-JavaScript: Does not have a way to assert a value is non-null.
+JavaScript: Does not have a way to assert a value is non-null.\
 TypeScript: The non-null assertion operator (!) tells TypeScript that a variable is not null or undefined.
 ```ts
 let element = document.getElementById("myDiv")!;
@@ -381,14 +381,15 @@ let element = document.getElementById("myDiv")!;
 
 
 #  17. TypeScript Configuration File
-JavaScript: No configuration file needed.
+JavaScript: No configuration file needed.\
 TypeScript: Uses tsconfig.json to configure the TypeScript compiler and project settings.
 
 
 #  18. Compatibility with JavaScript
-JavaScript: Native to browsers and runs without any compilation.
+JavaScript: Native to browsers and runs without any compilation.\
 TypeScript: Needs to be compiled (transpiled) to JavaScript, but is backward-compatible with JavaScript. You can use any valid JavaScript in a TypeScript file.
 
 
-
-
+#  19. Tooling Support
+JavaScript: Strong editor support, but lacks type-checking until runtime.\
+TypeScript: Integrated tooling with IDEs like Visual Studio Code provides enhanced auto-completion, error checking, and code navigation due to type information.
