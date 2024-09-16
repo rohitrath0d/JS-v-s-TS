@@ -343,3 +343,14 @@ With strict mode: TypeScript raises an error when you try to assign a string to 
 2. Code Robustness: Prevents unintended behavior by enforcing clear type definitions and checks.\
 3.  Early Error Detection: Catches potential runtime errors during development, improving code quality and maintainability.\
 In strict mode, TypeScript enforces better coding practices, helping you avoid errors that could occur due to type mismatches, such as in dynamically typed JavaScript.
+
+
+#  13. Type Guards
+JavaScript: Doesn't have built-in type guards.\
+TypeScript: TypeScript allows for type guards to narrow down types during runtime checks.
+
+```ts
+function isString(x: any): x is string {
+  return typeof x === "string";
+}
+```
