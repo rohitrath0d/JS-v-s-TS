@@ -385,5 +385,10 @@ JavaScript: No configuration file needed.
 TypeScript: Uses tsconfig.json to configure the TypeScript compiler and project settings.
 
 
+#  18. Compatibility with JavaScript
+JavaScript: Native to browsers and runs without any compilation.
+TypeScript: Needs to be compiled (transpiled) to JavaScript, but is backward-compatible with JavaScript. You can use any valid JavaScript in a TypeScript file.
+
+
 
 
