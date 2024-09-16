@@ -380,5 +380,10 @@ let element = document.getElementById("myDiv")!;
 ```
 
 
+#  17. TypeScript Configuration File
+JavaScript: No configuration file needed.
+TypeScript: Uses tsconfig.json to configure the TypeScript compiler and project settings.
+
+
 
 
