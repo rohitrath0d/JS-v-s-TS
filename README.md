@@ -11,6 +11,7 @@ TypeScript: Supports explicit type annotations (string, number, boolean, any, nu
 let age: number = 25;
 ```
 
+
 #  2. Static Typing
 JavaScript: Dynamically typed, meaning types are checked at runtime.\
 TypeScript: Statically typed, meaning types are checked at compile time, helping catch errors earlier in the development process.
@@ -41,6 +42,7 @@ The myCar object implements this interface by providing values for these propert
 This example shows how interfaces enforce a consistent structure for objects and their behaviors.
 ```
 
+
 #  3. Interfaces and Type Aliases
 JavaScript: No native support for interfaces.\
 TypeScript: Allows defining interfaces and type aliases to enforce structure in objects, function signatures, or classes.
@@ -52,6 +54,7 @@ interface Person {
   age: number;
 }
 ```
+
 
 #  4. Compile-time Errors
 JavaScript: Errors are detected only during execution (runtime).\
@@ -80,6 +83,7 @@ Compile-time Error: TypeScript will detect this type mismatch at compile time, a
 This is the advantage of TypeScript's static type checking, as it catches errors early before the code is run. In JavaScript, this type of error would only be discovered during execution (runtime).
 ```
 
+
 #  5. Type Inference
 JavaScript: No type inference.\
 TypeScript: Automatically infers types based on assigned values, though you can still explicitly declare them.
@@ -89,6 +93,7 @@ TypeScript: Automatically infers types based on assigned values, though you can 
 let name = 'John';  // inferred as string
 ```
 
+
 #  6. Optional and Default Parameters
 JavaScript: Supports default parameters but doesn't enforce checks for optional parameters.\
 TypeScript: Provides both optional (?) and default parameters in function definitions.
@@ -97,6 +102,8 @@ TypeScript: Provides both optional (?) and default parameters in function defini
 // Example
 function greet(name: string, age?: number): string { ... }
 ```
+
+
 #  7. Classes and Object-oriented Programming (OOP)
 JavaScript: ES6 introduced classes, but it's still loosely typed.\
 ypeScript: Enhances OOP with features like access modifiers (public, private, protected), abstract classes, and interfaces.
@@ -110,6 +117,7 @@ class Person {
   }
 }
 ```
+
 
 #  8. Enums
 JavaScript: No built-in support for enums.\
@@ -125,6 +133,7 @@ enum Direction {
 }
 ```
 
+
 #  9. Generics
 JavaScript: Doesn't natively support generics.\
 TypeScript: Allows for writing reusable, type-safe components and functions using generics.
@@ -137,11 +146,12 @@ function identity<T>(arg: T): T {
 ```
 
 #  10. Modules
-JavaScript: Uses ES6 modules (import/export), but doesn't provide type-safe imports and exports.
+JavaScript: Uses ES6 modules (import/export), but doesn't provide type-safe imports and exports.\
 TypeScript: Supports modules with strong type-checking for imports/exports.
 
 // more explaination on modules:
-In TypeScript, modules allow you to break down your code into smaller, manageable files, which can be imported and exported between different parts of your application. TypeScript enhances JavaScript’s ES6 module system with type safety, ensuring that the data being shared between modules is used correctly.
+In TypeScript, modules allow you to break down your code into smaller, manageable files, which can be imported and exported between different parts of your application.\
+TypeScript enhances JavaScript’s ES6 module system with type safety, ensuring that the data being shared between modules is used correctly.
 
 ```ts
 # Example of Modules in TypeScript
@@ -162,7 +172,6 @@ export const PI = 3.14159;
 In this example:
 mathUtils.ts contains two functions (add and subtract) and a constant (PI) that are being exported so they can be used in other files.
 ```
- 
 2. Importing the Module
 To use the exported functions and constants in another file, you can use the import statement.
 
@@ -179,7 +188,6 @@ In this example:
 We use the import statement to bring in the add, subtract, and PI from the mathUtils.ts module.
 We can then use the imported functions and constant in the current file (app.ts).
 ```
-
 3. Default Export and Import
 TypeScript, like JavaScript, also supports default exports, where a single item is exported by default from a module. Here's an example
 
@@ -201,9 +209,9 @@ When importing, we can name the function whatever we like (since it is a default
 ```
 # General Explaination:
 # Why Use Modules?
-1. Modularity: Modules help in organizing your code into reusable and manageable pieces, making your codebase more maintainable.
-2.Reusability: Code can be shared across different parts of an application or even across different projects.
-3. Type Safety: TypeScript ensures that you’re importing and using the correct types and functions, reducing errors.
+1. Modularity: Modules help in organizing your code into reusable and manageable pieces, making your codebase more maintainable.\
+2.Reusability: Code can be shared across different parts of an application or even across different projects.\
+3. Type Safety: TypeScript ensures that you’re importing and using the correct types and functions, reducing errors.\
 This modular approach makes it easy to scale projects, like your FinWise application, by separating different functionalities (e.g., handling finance logic, managing user inputs, or displaying data) into distinct modules.
 
 
@@ -287,6 +295,7 @@ Breakdown:
 Decorators are a powerful feature in TypeScript that allow developers to write cleaner, reusable code by abstracting cross-cutting concerns. They are particularly useful in scenarios like logging, validation, and dependency injection, making them a popular choice in frameworks like Angular.
 ```
 
+
 #  12. Strict Mode
 JavaScript: You can use "use strict"; for stricter rules.\
 TypeScript: Strict mode in TypeScript (strict: true in tsconfig.json) enforces rigorous checks across various type rules, ensuring higher code safety.\
@@ -326,19 +335,11 @@ value = "hello";  // Error: Type 'string' is not assignable to type 'number'
 
 ```
 # Breakdown:
-Without strict mode: TypeScript allows the variable value to hold different types (number and string) without errors.
+Without strict mode: TypeScript allows the variable value to hold different types (number and string) without errors.\
 With strict mode: TypeScript raises an error when you try to assign a string to a variable that has already been declared as a number.
 
 # Why Use Strict Mode in TypeScript?
-1. Type Safety: Ensures that variables stick to their assigned types, reducing potential bugs.
-2. Code Robustness: Prevents unintended behavior by enforcing clear type definitions and checks.
-3.  Early Error Detection: Catches potential runtime errors during development, improving code quality and maintainability.
+1. Type Safety: Ensures that variables stick to their assigned types, reducing potential bugs.\
+2. Code Robustness: Prevents unintended behavior by enforcing clear type definitions and checks.\
+3.  Early Error Detection: Catches potential runtime errors during development, improving code quality and maintainability.\
 In strict mode, TypeScript enforces better coding practices, helping you avoid errors that could occur due to type mismatches, such as in dynamically typed JavaScript.
-#  13. Type Guards
-#  14. Utility Types
-
-#  15. Union and Intersection Types
-#  16. Non-null Assertion Operator
-#  17. TypeScript Configuration File
-#  18. Compatibility with JavaScript
-#  19. Tooling Support
